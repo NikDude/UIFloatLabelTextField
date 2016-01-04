@@ -80,6 +80,13 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
 @property (nonatomic, assign) CGFloat horizontalPadding UI_APPEARANCE_SELECTOR;
 
 /**
+ * This property can be used to fine-tune the vertical position of the floatLabel.
+ *
+ * Defaults to 0.0.
+ */
+@property (nonatomic, assign) CGFloat verticalOffset UI_APPEARANCE_SELECTOR;
+
+/**
  * Disables the option to @a paste in the @c UIMenuController. 
  * This @c NSNumber value is converted to a @c BOOL.
  *

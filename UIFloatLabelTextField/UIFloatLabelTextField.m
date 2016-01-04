@@ -78,6 +78,7 @@
 {
     // Textfield Padding
     _horizontalPadding = 5.0f;
+    _verticalOffset = 0.0f;
     
     // Text Alignment
     [self setTextAlignment:NSTextAlignmentLeft];
@@ -255,7 +256,7 @@
     _floatLabel.alpha = (animationType == UIFloatLabelAnimationTypeShow) ? 1.0f : 0.0f;
     CGFloat yOrigin = (animationType == UIFloatLabelAnimationTypeShow) ? 3.0f : 0.5f * CGRectGetHeight([self frame]);
     _floatLabel.frame = CGRectMake(_xOrigin,
-                                   yOrigin,
+                                   yOrigin + _verticalOffset,
                                    CGRectGetWidth([_floatLabel frame]),
                                    CGRectGetHeight([_floatLabel frame]));
 }
